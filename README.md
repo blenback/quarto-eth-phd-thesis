@@ -8,6 +8,8 @@ The template is geared towards producing PDF output as I would imagine this is t
 
 Here is the example produced by the template for you to view: [Example PDF](_book/quarto-eth-phd-thesis.pdf)
 
+I have also produced this README as a [webpage](https://blenback.github.io/quarto-eth-phd-thesis.html) for easier reading.
+
 ## 📄 Features
 
 -   The ability to add a cover page using the [`quarto_titlepages`](https://nmfs-opensci.github.io/quarto_titlepages/) extension
