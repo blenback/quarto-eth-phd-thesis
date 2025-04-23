@@ -6,7 +6,7 @@ I built this template based upon the `quarto-phd-thesis` template from `james-d-
 
 The template is geared towards producing PDF output as I would imagine this is the most common format that theses must be submitted in.
 
-Here is the example produced by the template for you to view: [Example PDF](_book/quarto-eth-phd-thesis.pdf)
+Here is the example produced by the template for you to view: [Example PDF](https://blenback.github.io/media/quarto-eth-phd-thesis.pdf)
 
 I have also produced this README as a [webpage](https://blenback.github.io/quarto-eth-phd-thesis.html) for easier reading.
 
