@@ -1,7 +1,6 @@
 # Use the R-profile to sert up packages and call helper functions when rendering
 # all QMDs.
 
-#options(tinytex.install_packages = FALSE)
 #load packages
 packs<-c("ggplot2", "knitr", "kableExtra", "ggthemes", "stringr")
 
@@ -35,26 +34,6 @@ thesis_tbl <- function(x, escape, ltable = FALSE) {
     row_spec(0, bold=TRUE) %>%
     asis_output()
 }
-
-# This is an alternative option that re-defines the printing of all data.frames to use the kableExtra styling
-# BUT it does not allow for subsequent modification of the column widths
-# print everything as kable ----
-#    knit_print.data.frame <- function (x, options, ...) {
-#      x %>% 
-#        kable(x,
-#              digits = 3,
-#              align = "c",
-#              booktabs = T,
-#              format = "latex",
-#              escape = FALSE)%>%
-#        kable_styling(full_width = FALSE,
-#                      font_size = 10)%>%
-#        column_spec(1:ncol(x),
-#                    latex_valign = "m") %>%
-#        row_spec(0, bold=TRUE) %>% 
-#        knitr::knit_print(options, ...)
-#  }
-# registerS3method("knit_print", "data.frame", knit_print.data.frame)
 
 #' theme_publication
 #' 

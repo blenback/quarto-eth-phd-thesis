@@ -53,20 +53,20 @@ format:
     - "uniquename=false"
     - "uniquelist=false"
     template-partials:
-    - frontmatter/title.tex
-    - frontmatter/before-body.tex
-    - frontmatter/toc.tex        
-    - "frontmatter/_coverpage.tex"
-    - "frontmatter/_author-affiliation-themes.tex"
-    - "frontmatter/_header-footer-date-themes.tex"
-    - "frontmatter/_title-themes.tex"
-    - "frontmatter/_titlepage.tex"
-    - "frontmatter/pandoc.tex"
+    - partials/title.tex
+    - partials/before-body.tex
+    - partials/toc.tex        
+    - "partials/_coverpage.tex"
+    - "partials/_author-affiliation-themes.tex"
+    - "partials/_header-footer-date-themes.tex"
+    - "partials/_title-themes.tex"
+    - "partials/_titlepage.tex"
+    - "partials/pandoc.tex"
     include-in-header:
-    - frontmatter/header.tex
+    - partials/header.tex
     filters:      
-    - frontmatter/titlepage-theme.lua
-    - frontmatter/coverpage-theme.lua
+    - partials/titlepage-theme.lua
+    - partials/coverpage-theme.lua
     format-resources:
     - "fonts/FiraSans-Light.ttf"
 

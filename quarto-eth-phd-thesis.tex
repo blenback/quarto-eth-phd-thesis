@@ -322,8 +322,6 @@ morestring=[b]"
 \usepackage{calc}
 \usepackage{calculator}
 
-
-
 \usepackage{graphicx}
 \usepackage{geometry}
 \usepackage{afterpage}
@@ -332,14 +330,11 @@ morestring=[b]"
 \usetikzlibrary{fadings}
 \usepackage[pagecolor=none]{pagecolor}
 
-
 % Set the titlepage font families
-
-
-
-
-
-
+\usepackage{fontspec}
+\newfontfamily{\titlepagetitlefont}{FiraSans-Bold.ttf}
+\usepackage{fontspec}
+\newfontfamily{\titlepagefooterfont}{FiraSans-Regular.ttf}
 
 % Set the coverpage font families
 \usepackage{fontspec}
@@ -684,7 +679,7 @@ nondum e canendo sonat et Ulixes: et sibi profugos
 Hippalmon recepit: divulsere suo
 \href{http://exclamatque.net/iter.html}{alto adfecit}; modo.
 
-\begin{tcolorbox}[enhanced jigsaw, rightrule=.15mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, opacityback=0, breakable, titlerule=0mm, bottomrule=.15mm, colback=white, title={\textbf{Summary of the chapter}}, coltitle=black, bottomtitle=1mm, toptitle=1mm, toprule=.15mm, leftrule=.75mm, left=2mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, breakable, opacityback=0, bottomtitle=1mm, bottomrule=.15mm, colback=white, opacitybacktitle=0.6, toprule=.15mm, colframe=quarto-callout-note-color-frame, toptitle=1mm, titlerule=0mm, title={\textbf{Summary of the chapter}}, coltitle=black, arc=.35mm, rightrule=.15mm, leftrule=.75mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white]
 
 \hfill\break
 \textbf{Concerning the first research topic:}\\
@@ -727,7 +722,7 @@ which have been submitted for peer review.
 
 \thispagestyle{empty}
 
-\begin{tcolorbox}[enhanced jigsaw, rightrule=.15mm, colframe=quarto-callout-note-color-frame, colbacktitle=quarto-callout-note-color!10!white, arc=.35mm, opacityback=0, breakable, titlerule=0mm, bottomrule=.15mm, colback=white, title={\textbf{Original article details}}, coltitle=black, bottomtitle=1mm, toptitle=1mm, toprule=.15mm, leftrule=.75mm, left=2mm, opacitybacktitle=0.6]
+\begin{tcolorbox}[enhanced jigsaw, breakable, opacityback=0, bottomtitle=1mm, bottomrule=.15mm, colback=white, opacitybacktitle=0.6, toprule=.15mm, colframe=quarto-callout-note-color-frame, toptitle=1mm, titlerule=0mm, title={\textbf{Original article details}}, coltitle=black, arc=.35mm, rightrule=.15mm, leftrule=.75mm, left=2mm, colbacktitle=quarto-callout-note-color!10!white]
 
 \preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
 
