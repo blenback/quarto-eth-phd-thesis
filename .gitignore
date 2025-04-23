@@ -2,13 +2,4 @@
 .Rhistory
 .RData
 .Ruserdata
-*.pptx
-*.docx
-/_manuscript/
-/_book/
-/_extensions/
-/chapters/CaC/_extensions/
-/planning/
-/presentation/
-
 /.quarto/
