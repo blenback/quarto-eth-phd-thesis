@@ -1,0 +1,6 @@
+# Structure of the thesis {#sec-struct_chap}
+
+\newpage
+
+The remainder of this thesis is structured as a set of chapters that present the individual research contributions in the form of scientific articles, **X** of which are currently published, and **Y** of which have been submitted for peer review.
+

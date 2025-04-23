@@ -1,0 +1,42 @@
+---
+format: 
+  pdf:
+    coverpage: true
+    coverpage-bg-image: "frontmatter/images/cover_background.png"
+    coverpage-title: "Title"
+    coverpage-footer: "Subtitle"
+    coverpage-theme:
+      title-fontfamily: "FiraSans-Bold.ttf"
+      title-fontsize: 24
+      title-color: mydarkgreen
+      title-align: "right"
+      title-bottom: "27cm"
+      title-width: "20cm"
+      title-left: "18cm"
+      header-style: "none"
+      footer-style: "plain"
+      footer-fontfamily: "FiraSans-Regular.ttf"
+      footer-bottom: "25cm"
+      footer-align: "right"
+      footer-width: "20cm"
+      footer-left: "18cm"
+      footer-fontsize: 20
+      footer-color: mydarkgreen
+      date-style: "none"
+      bg-image-fading: "north"
+      bg-image-opacity: 0.8
+---
+
+# Glossary {.unnumbered}
+
+## Abbreviations
+
+ES
+: Ecosystem Services
+
+EI
+: Ecological Infrastructure
+
+
+
+

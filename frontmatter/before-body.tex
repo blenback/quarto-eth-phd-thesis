@@ -1,0 +1,105 @@
+%%%%% CHOOSE YOUR LINE SPACING HERE
+% This is approx. 1.5 spacing:
+\setlength{\textbaselineskip}{18pt plus2pt minus1pt}
+
+% You can set the spacing here for the roman-numbered pages (acknowledgements, table of contents, etc.)
+\setlength{\frontmatterbaselineskip}{18pt plus2pt minus1pt}
+
+% Leave this line alone; it gets things started for the real document.
+\setlength{\baselineskip}{\textbaselineskip}
+
+%%%%% CHOOSE YOUR SECTION NUMBERING DEPTH HERE
+% You have two choices.  First, how far down are sections numbered?  (Below that, they're named but
+% don't get numbers.)  Second, what level of section appears in the table of contents?  These don't have
+% to match: you can have numbered sections that don't show up in the ToC, or unnumbered sections that
+% do.  Throughout, 0 = chapter; 1 = section; 2 = subsection; 3 = subsubsection, 4 = paragraph...
+
+% The level that gets a number:
+\setcounter{secnumdepth}{$secnumdepth$}
+% The level that shows up in the ToC:
+\setcounter{tocdepth}{$tocdepth$}
+
+%%%%% begin titlepage extension code
+
+$if(has-frontmatter)$
+  \begin{frontmatter}
+$endif$
+
+\begin{titlepage}
+$-- % Coverpage
+$if(coverpage-true)$
+$_coverpage.tex()$
+$endif$
+$if(coverpage-include-file)$
+
+$for(coverpage-include-file)$\input{$coverpage-include-file$}
+\clearpage
+$endfor$$endif$
+
+$-- % Titlepage
+$if(titlepage-true)$
+$if(titlepage-file)$
+% Use the file
+\input{$titlepage-filename$}
+$else$
+$_titlepage.tex()$
+$endif$
+$endif$
+$if(titlepage-include-file)$
+
+$for(titlepage-include-file)$\input{$titlepage-include-file$}
+\clearpage
+$endfor$$endif$
+\end{titlepage}
+% \setcounter{page}{1}
+$if(has-frontmatter)$
+\end{frontmatter}
+$endif$
+
+%%%%% end titlepage extension code
+
+
+%%%%% ABSTRACT SEPARATE
+% This is used to create the separate, one-page abstract that you are required to hand into the Exam
+% Schools.  You can comment it out to generate a PDF for printing or whatnot.
+% \begin{abstractseparate}
+% 	\input{frontmatter/03-abstract.txt} % Create an abstract.tex file in the 'text' folder for your abstract.
+% \end{abstractseparate}
+
+% \newpage
+% \thispagestyle{empty}
+% \null
+% \newpage
+% Pages are roman numbered from here, though page numbers are invisible until ToC.  This is in
+% keeping with most typesetting conventions.
+\pagenumbering{roman}
+
+\begin{romanpages}
+
+% Title page is created here
+\maketitle
+
+%%%%% SUMMARY
+
+\begin{summary}
+\addcontentsline{toc}{chapter}{Summary}
+	\input{frontmatter/summary.qmd}
+\end{summary}
+
+%%%%% SUMMARY TRANSLATION
+
+\begin{summarytranslation}
+%\addcontentsline{toc}{chapter}{Zusammenfassung}
+	\input{frontmatter/summary_translation.qmd}
+\end{summarytranslation}
+
+%%%%% ACKNOWLEDGEMENTS 
+
+\begin{acknowledgements}
+\addcontentsline{toc}{chapter}{Acknowledgements}
+ 	\input{frontmatter/acknowledgements.qmd}
+\end{acknowledgements}
+
+% This aligns the bottom of the text of each page.  It generally makes things look better.
+\flushbottom
+

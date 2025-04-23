@@ -1,0 +1,18 @@
+# Appendices
+
+\newpage
+
+<!-- Set Alpha-numeric (e.g. A.1) section numbering for the appendices -->
+```{=tex}
+\setcounter{section}{0}
+\renewcommand{\thesection}{\Alph{section}}
+\counterwithin{figure}{section}
+\counterwithin{table}{section}
+```
+
+<!-- Source the sperate appendices files for each of the papers which are contained with their respective sub-folders e.g. chapters/ICoLCM/ICoLCM_appendix.qmd -->
+
+{{< include ../chapters/paper-01/paper-01-appendix.qmd >}}
+
+\newpage
+

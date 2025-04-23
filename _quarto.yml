@@ -1,0 +1,83 @@
+project:
+  type: book
+  execute-dir: project
+book: 
+  date: last-modified
+  chapters:
+    - index.qmd # Used to enter the cover page yaml, glossary, abbreviations, etc.
+    - chapters/introduction/introduction.qmd
+    - chapters/sota/sota.qmd
+    - chapters/structure/structure.qmd
+    - chapters/paper-01/paper-01.qmd
+    - chapters/synthesis/synthesis.qmd
+    - endmatter/references.qmd
+    - endmatter/appendices.qmd
+    - endmatter/CV.qmd
+bibliography: bibliography.bib
+titlepage-title: "Your thesis title"
+titlepage-author: "Jane Doe"
+summarytitle: Zusammenfassung
+degree: DOCTOR OF SCIENCES # Degree title 
+degreedate: 2025 # Year of degree submission
+dissnumber: XXXX # ETH dissertation number
+citizenship: My home country # Country of citizenship
+dob: September 14, 1993 # Date of birth
+MSctitle: Environmental Policy, Science and Management # Title of MSc dgree
+MScuni: Central European University, University of Manchester, University of Lund, University of the Aegean # University/ies of MSc degree
+examiner: Prof. Dr. Dwayne Johnson # Your examiner (title and name: Prof. Dr. X)
+coexaminerone: Prof. Dr. Stevie Irwin # Your 1st co-examiner (title and name: Prof. Dr. X)
+coexaminertwo: Dr. Brian Gumble # Your 2nd co-examiner (title and name: Prof. Dr. X)
+secnumdepth: 3 # Depth of section number
+tocdepth: 2 # Depth of TOC numbering
+lightbox: true # Lightbox stly (zoomable) imaes for HTML
+fig-align: center # center align all figures
+execute:
+  echo: false
+format:
+  pdf:
+    keep-tex: true 
+    documentclass: ETH-thesis-template
+    classoption: [oneside]
+    papersize: a4
+    linkcolor: mydarkgreen
+    citecolor: mydarkgreen
+    urlcolor: mydarkgreen
+    filecolor: mydarkgreen
+    callout-icon: false
+    cite-method: biblatex
+    biblatexoptions:
+    - "style= authoryear"
+    - "maxcitenames= 2"
+    - "maxbibnames= 999"
+    - "giveninits = false"
+    - "uniquename=false"
+    - "uniquelist=false"
+    template-partials:
+    - frontmatter/title.tex
+    - frontmatter/before-body.tex
+    - frontmatter/toc.tex        
+    - "frontmatter/_coverpage.tex"
+    - "frontmatter/_author-affiliation-themes.tex"
+    - "frontmatter/_header-footer-date-themes.tex"
+    - "frontmatter/_title-themes.tex"
+    - "frontmatter/_titlepage.tex"
+    - "frontmatter/pandoc.tex"
+    include-in-header:
+    - frontmatter/header.tex
+    filters:      
+    - frontmatter/titlepage-theme.lua
+    - frontmatter/coverpage-theme.lua
+    format-resources:
+    - "fonts/FiraSans-Light.ttf"
+
+
+
+
+
+
+
+
+
+
+
+

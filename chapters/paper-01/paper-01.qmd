@@ -1,0 +1,106 @@
+---
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+# My 1st paper chapter {#sec-paper_chap}
+
+\newpage
+
+\thispagestyle{empty}
+<!--remove header and page number from the callout page -->
+
+::: {.callout-note appearance="default" style="font-size: 0.8em;"}
+## **Original article details**
+
+\preto\fullcite{\AtNextCite{\defcounter{maxnames}{99}}}
+
+**Status**: *Published 2nd November 2022*
+
+\
+**Citation**: \fullcite{black2024}
+
+\
+**Author contributions**: \small
+\credit{Benjamin Black}{Conceptualization, Data curation, Investigation, Formal analysis, Project administration, Methodology, Software, Writing -- original draft, Writing -- review \& editing}
+\credit{Antoine Adde}{Data curation, Formal analysis, Software, Resources}
+\credit{Daniel Farinotti}{Data curation, Formal analysis, Writing -- review \& editing}
+\credit{Antoine Guisan}{Writing -- review \& Editing, Supervision}
+\credit{Nathan Külling}{Data curation, Formal analysis, Resources}
+\credit{Manuel Kurmann}{Data curation, Formal analysis, Methodology}
+\credit{Caroline Martin}{Data curation, Formal analysis, Resources}
+\credit{Paula Mayer}{Resources, Investigation, Visualisation}
+\credit{Sven-Erik Rabe}{Resources, Investigation}
+\credit{Jan Streit}{Data curation, Analysis, Methodology}
+\credit{Harry Zekollari}{Data curation, Analysis, Writing -- review \& editing}
+\credit{Adrienne Grêt-Regamey}{Supervision, Project administration, Writing -- review \& editing}
+\insertcredits \resetcredits
+
+\
+**Code**: <https://doi.org/10.5281/zenodo.12698471>\
+**Data**: <https://doi.org/10.5281/zenodo.8263509>\
+**Results**: <https://doi.org/10.5281/zenodo.14228253>
+
+\
+**Highlights**:
+
+\begin{itemize}
+  \item Quippe eum plumas magnum effecta ut regna
+  \item Ferro ab turres desiluit eadem vocibus
+  \item Tenebat arma
+  \item Pars devolvere humum
+\end{itemize}
+
+\
+**The presentation of this article in this chapter represents a
+post-print, differing from the published paper only in terms of layout
+and formatting.**
+:::
+
+```{r Table_figure_prep, include=FALSE}
+#source the script that prepares all the figures
+source("chapters/paper-01/paper-01-figs.R")
+```
+
+\newpage
+
+## Introduction {#sec-introduction}
+
+Frutices puerile simul ignibus adiectura et pudorem Helops Xanthique
+inmotae tertia longa, invitique rapidi haerentia et vincla pressus.
+Tremoribus trahi famularia in ferro, bimari Atlantiades filia inducit
+alta, ora locus voveas verbis, tot. Pharetratae dignus, illa arbore
+audiet feret manu ora dispar tum **neque** exemplo fluidos in duce! Ipso
+*fecit illo* centum nec blanditiis arbiter est vehit *erat in* faciet
+repugnat. Lyraeque inde divulsaque animum citharam, qui ut iuvenem
+quoniam et (@fig-dummy).
+
+![Dummy figure](figures/dummy_plot.png){#fig-dummy} 
+
+## Methods {#sec-methods}
+
+```{r, message=FALSE, warning = FALSE}
+#| label: tbl-alloc_param_summary
+#| tbl-cap: Dummy table
+#| tbl-pos: H
+
+#load csv of allocation parameter summary statistics
+Calibration_summary <- read.csv("chapters/paper-01/data/Validation_summary.csv")
+
+#replace . in column names with white space
+colnames(Calibration_summary) <- str_replace_all(colnames(Calibration_summary), "\\.", " ")
+
+#output as markdown table with Knitr::kable
+#knitr::kable(Calibration_summary, align=rep('c', ncol(LULC_agg_summary)), format = "markdown")
+Calibration_summary %>% 
+  thesis_tbl(escape = FALSE)
+```
+
+## Results {#sec-results}
+
+## Discussion {#sec-discussion}
+
+## Conclusion {#sec-conclusion}
+
+## Acknowledgements {#sec-acknowledgements}

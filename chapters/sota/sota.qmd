@@ -1,0 +1,41 @@
+# State of the Art {#sec-SotA_chap}
+
+\newpage
+
+Lorem markdownum agros; mandata, crescunt nec meus languida percutit turba
+credimus fervidus. Cuspide Dictaei antris! Soror mare insilit recepto, et sic
+Iuppiter, videri at nisi mixta rigore hi traxit horridus flamma. In possum cadit
+*periclo*, uterque, dentes peregrina obortae Cadmus?
+
+Mane pollice [locumque saltus nusquam](http://www.traxit.com/palamedes.php),
+esto Minerva patulos, vel. Et sortita naufraga turbaeque postquam duce Tydides
+imagine sint, **non**. Neque datur venire, nondum e canendo sonat et Ulixes: et
+sibi profugos [dominam aderit](http://varas.com/molliforsitan) me dolores. In
+[mons ipso cessit](http://nemus.io/) hoste: per penates umeris Hippalmon
+recepit: divulsere suo [alto adfecit](http://exclamatque.net/iter.html); modo.
+
+
+::: {.callout-note appearance="default"}
+## **Summary of the chapter**
+
+\
+**Concerning the first research topic:**
+\
+\begin{itemize}
+  \setlength\itemsep{0.8em}
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.
+  \item Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Nulla quis sem at nibh elementum imperdiet.
+  \item Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Aenean nec eros.
+\end{itemize}
+
+\
+**Concerning the 2nd research topic:**
+\
+\begin{itemize}
+  \setlength\itemsep{0.8em}
+  \item Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.
+  \item Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Nulla quis sem at nibh elementum imperdiet.
+  \item Curabitur sit amet mauris. Morbi in dui quis est pulvinar ullamcorper. Nulla facilisi. Aenean nec eros.
+\end{itemize}
+
+:::
