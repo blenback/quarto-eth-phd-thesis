@@ -4,6 +4,10 @@ This is a template that is intended to meet the [requirements](https://ethz.ch/s
 
 I built this template based upon the `quarto-phd-thesis` template from `james-d-h`: <https://github.com/james-d-h/quarto-phd-thesis>, adding some notable features.
 
+The template is geared towards producing PDF output as I would imagine this is the most common format that theses must be submitted in.
+
+Here is an example produced by the template for you to view: <https://blenback.github.io/quarto-eth-phd-thesis.html>
+
 ## 📄 Features
 
 -   The ability to add a cover page using the [`quarto_titlepages`](https://nmfs-opensci.github.io/quarto_titlepages/) extension
@@ -47,9 +51,13 @@ git clone https://github.com/YOUR_USERNAME/quarto-eth-phd-thesis.git
 cd quarto-eth-phd-thesis
 ```
 
-3.  Open in RStudio Open the `quarto-eth-phd-thesis.Rproj` file in RStudio to access the full project environment.
+### 3.  Open in RStudio
 
-4.  Render the Thesis From the RStudio console or terminal:
+Open the `quarto-eth-phd-thesis.Rproj` file in RStudio to access the full project environment.
+
+### 4.  Render the Thesis
+
+From the RStudio console or terminal:
 
 ``` bash
 quarto render
