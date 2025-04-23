@@ -6,7 +6,7 @@ I built this template based upon the `quarto-phd-thesis` template from `james-d-
 
 The template is geared towards producing PDF output as I would imagine this is the most common format that theses must be submitted in.
 
-Here is an example produced by the template for you to view: <https://blenback.github.io/quarto-eth-phd-thesis.html>
+Here is the example produced by the template for you to view: [Example PDF](_book/quarto-eth-phd-thesis.pdf)
 
 ## 📄 Features
 
@@ -51,11 +51,11 @@ git clone https://github.com/YOUR_USERNAME/quarto-eth-phd-thesis.git
 cd quarto-eth-phd-thesis
 ```
 
-### 3.  Open in RStudio
+### 3. Open in RStudio
 
 Open the `quarto-eth-phd-thesis.Rproj` file in RStudio to access the full project environment.
 
-### 4.  Render the Thesis
+### 4. Render the Thesis
 
 From the RStudio console or terminal:
 
